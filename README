@@ -1,0 +1,9 @@
+* README
+
+  Here are some of my elisp experiments; all are licensed under the terms of the
+  GPLv3.
+
+# Local Variables:
+# mode:org
+# org-startup-folded: nil 
+# End:
