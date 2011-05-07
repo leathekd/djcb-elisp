@@ -1,4 +1,4 @@
-;;; zenburn-theme.el --- Dark and clean theme
+;;; zenburn-theme.el --- custom face theme for emacs 24+
 
 ;; Copyright (C) 2011 Free Software Foundation, Inc.
 
@@ -16,7 +16,23 @@
 ;; GNU General Public License for more details.
 ;; <http://www.gnu.org/licenses/>.
 
-;; zenburn theme, a nice low-contrast theme
+;; zenburn, a nice, low-contrast theme, pleasant for the eyes
+
+;;; zenburn-theme is a port of the zenburn color theme to the new emacs-24+
+;;; system. The zenburn color scheme was developed by Jani Nurminen
+;;; (http://slinky.imukuppi.org/zenburnpage/), and the original emacs-version
+;;; was created by Daniel Brockman (https://github.com/dbrock/zenburn-el), and
+;;; there seem to be a few variants on the 'net as well -- for example, there is
+;;; https://github.com/bbatsov/zenburn-emacs/blob/master/zenburn.el, which is
+;;; based on the modifications I did, adding support for Wanderlust, magit,
+;;; elscreen
+;;;
+;;; the version here is different in the way that it is *not* for the
+;;; 'color-themes'-package, but instead targets the new emacs24+ 'deftheme'
+;;; system. The contents are based on the old 'color-themes'-packages, with a
+;;; bunch of changes.
+
+;;; Code:
 
 (deftheme zenburn
   "The Zenburn theme.")
@@ -590,3 +606,6 @@
 ;; Local Variables:
 ;; no-byte-compile: t
 ;; End:
+
+
+;; zenburn-theme.el ends here
