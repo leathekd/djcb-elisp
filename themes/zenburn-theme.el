@@ -115,7 +115,7 @@
 
     
     `(border ((t (:background ,zenburn-bg))))
-    '(fringe ((t (:inherit 'zenburn-highlight-subtle))))
+    '(fringe ((t (:inherit 'default))))
     '(header-line ((t (:inherit 'zenburn-highlight-damp
 			:box (:color "#2e3330" :line-width 2)))))
     `(mode-line ((t (:foreground ,zenburn-yellow :background "#1e2320"
@@ -216,6 +216,13 @@
     '(diff-context-face ((t (:inherit font-lock-comment))))
     '(diff-refine-change-face ((t (:inherit 'zenburn-background-2))))
 
+    ;; elscreen
+    `(elscreen-tab-other-screen ((t ((:foreground ,zenburn-fg
+				       :background ,zenburn-green-1)))))
+    `(elscreen-tab-current-screen ((t (:foreground ,zenburn-blue+1
+					:background "#1e2320"))))
+    
+  
     ;; emms
     `(emms-pbi-song ((t (:foreground ,zenburn-yellow))))
     '(emms-pbi-current ((t (:inherit 'zenburn-primary-1))))
@@ -254,6 +261,11 @@
     '(eshell-ls-special ((t (:inherit 'zenburn-primary-1))))
     `(eshell-ls-symlink ((t (:foreground ,zenburn-cyan :weight bold))))
 
+    ;; flyspell
+    '(flyspell-duplicate ((t (:inherit zenburn-primary-1))))
+    '(flyspell-incorrect ((t (:inherit font-lock-warning))))
+
+        
     ;; font-latex
     '(font-latex-bold ((t (:inherit bold))))
     '(font-latex-warning ((t (:inherit font-lock-warning))))
@@ -346,8 +358,8 @@
     ;; highlight
     '(highlight-current-line ((t (:inherit 'zenburn-highlight-subtle))))
 
-    ;; 
-    '(hl-line ((t (:background "#444444"))))
+    ;; hl-line 
+    `(hl-line ((t (:background ,zenburn-bg-1))))
     
     ;; holiday
     '(holiday ((t (:underline t :inherit 'zenburn-primary-4))))
@@ -415,6 +427,10 @@
     '(keywiz-wrong-face ((t (:inherit font-lock-warning))))
     '(keywiz-command-face ((t (:inherit 'zenburn-primary-2))))
 
+    ;; magit
+    '(magit-section-title ((t (:inherit zenburn-primary-1))))
+    '(magit-branch ((t (:inherit zenburn-primary-2))))
+    
     ;; makefile
     '(makefile-space ((t (:inherit font-lock-warning))))
     '(makefile-shell ((t (nil))))
@@ -431,9 +447,46 @@
     '(message-header-xheader-face ((t (:inherit 'zenburn-green))))
     '(message-mml-face ((t (:inherit 'zenburn-primary-1))))
     '(message-separator-face ((t (:inherit font-lock-comment))))
-    
+
+    ;; mew
+    '(mew-face-header-subject ((t (:inherit zenburn-orange))))
+    '(mew-face-header-from ((t (:inherit zenburn-yellow))))
+    '(mew-face-header-date ((t (:inherit zenburn-green))))
+    '(mew-face-header-to ((t (:inherit zenburn-red))))
+    '(mew-face-header-key ((t (:inherit zenburn-green))))
+    '(mew-face-header-private ((t (:inherit zenburn-green))))
+    '(mew-face-header-important ((t (:inherit zenburn-blue))))
+    '(mew-face-header-marginal ((t (:inherit zenburn-term-dark-gray))))
+    '(mew-face-header-warning ((t (:inherit zenburn-red))))
+    '(mew-face-header-xmew ((t (:inherit zenburn-green))))
+    '(mew-face-header-xmew-bad ((t (:inherit zenburn-red))))
+    '(mew-face-body-url ((t (:inherit zenburn-orange))))
+    '(mew-face-body-comment ((t (:inherit zenburn-term-dark-gray))))
+    '(mew-face-body-cite1 ((t (:inherit zenburn-green))))
+    '(mew-face-body-cite2 ((t (:inherit zenburn-blue))))
+    '(mew-face-body-cite3 ((t (:inherit zenburn-orange))))
+    '(mew-face-body-cite4 ((t (:inherit zenburn-yellow))))
+    '(mew-face-body-cite5 ((t (:inherit zenburn-red))))
+    '(mew-face-mark-review ((t (:inherit zenburn-blue))))
+    '(mew-face-mark-escape ((t (:inherit zenburn-green))))
+    '(mew-face-mark-delete ((t (:inherit zenburn-red))))
+    '(mew-face-mark-unlink ((t (:inherit zenburn-yellow))))
+    '(mew-face-mark-refile ((t (:inherit zenburn-green))))
+    '(mew-face-mark-unread ((t (:inherit zenburn-red-2))))
+    '(mew-face-eof-message ((t (:inherit zenburn-green))))
+    '(mew-face-eof-part ((t (:inherit zenburn-yellow))))
+        
     ;; minimap
     '(minimap-active-region-background ((t (:foreground nil :background "#233323"))))
+
+    ;; nav
+    '(nav-face-heading ((t (:inherit zenburn-yellow))))
+    '(nav-face-button-num ((t (:inherit zenburn-cyan))))
+    '(nav-face-dir ((t (:inherit zenburn-green))))
+    '(nav-face-hdir ((t (:inherit zenburn-red))))
+    '(nav-face-file ((t (:inherit zenburn-fg))))
+    '(nav-face-hfile ((t (:inherit zenburn-red-4))))
+    
     
     ;; nxml
     '(nxml-attribute-colon ((t (:inherit default))))
@@ -523,6 +576,17 @@
     '(rcirc-timestamp ((t (:inherit font-lock-comment))))
     '(rcirc-prompt ((t (:inherit 'zenburn-primary-1))))
     '(rcirc-mode-line-nick ((t (:inherit 'zenburn-primary-1))))
+
+    ;; rpm-spec
+    '(rpm-spec-dir ((t (:inherit zenburn-green))))
+    '(rpm-spec-doc ((t (:inherit zenburn-green))))
+    '(rpm-spec-ghost ((t (:inherit zenburn-red))))
+    '(rpm-spec-macro ((t (:inherit zenburn-yellow))))
+    '(rpm-spec-obsolete-tag ((t (:inherit zenburn-red))))
+    '(rpm-spec-package ((t (:inherit zenburn-red))))
+    '(rpm-spec-section ((t (:inherit zenburn-yellow))))
+    '(rpm-spec-tag ((t (:inherit zenburn-blue))))
+    '(rpm-spec-var ((t (:inherit zenburn-red))))
     
     ;; show-paren
     '(show-paren-mismatch ((t (:inherit font-lock-warning))))
@@ -540,6 +604,9 @@
 
     ;; strokes
     '(strokes-char-face ((t (:inherit font-lock-keyword))))
+
+    ;; svn-mark
+    '(svn-mark ((t (:inherit zenburn-blue))))
     
     ;; todoo
     '(todoo-item-header-face ((t (:inherit 'zenburn-primary-1))))
@@ -552,6 +619,15 @@
     '(tuareg-font-lock-interactive-output-face ((t (:inherit 'zenburn-primary-3))))
     '(tuareg-font-lock-operator-face ((t (:inherit font-lock-operator))))
 
+    ;; twitter
+    `(twitter-time-stamp ((t (:foreground ,zenburn-orange :background "#1e2320"))))
+    `(twitter-user-name ((t (:foreground "#acbc90" :background "#1e2320"))))
+    `(twitter-header ((t (:foreground ,zenburn-orange :background "#1e2320"))))
+       
+    ;; twittering-mode
+    '(twittering-username-face ((t (:inherit 'zenburn-red-2))))
+    '(twittering-uri-face ((t (:inherit 'zenburn-blue :underline t))))
+    
     ;; w3m
     '(w3m-form-button-face ((t (:inherit widget-button))))
     '(w3m-form-button-pressed-face ((t (:inherit widget-button-pressed))))
@@ -574,8 +650,8 @@
     '(wl-highlight-folder-few-face ((t (:inherit 'zenburn-red-2))))
     '(wl-highlight-folder-many-face ((t (:inherit 'zenburn-red-1))))
     '(wl-highlight-folder-path-face ((t (:inherit 'zenburn-orange))))
-    '(wl-highlight-folder-unread-face ((t (:inherit 'zenburn-red-3))))
-    '(wl-highlight-folder-zero-face ((t (:inherit 'zenburn-red-4))))
+    '(wl-highlight-folder-unread-face ((t (:inherit 'zenburn-blue))))
+    '(wl-highlight-folder-zero-face ((t (:inherit 'zenburn-fg))))
     '(wl-highlight-folder-unknown-face ((t (:inherit 'zenburn-blue))))    
     '(wl-highlight-message-citation-header ((t (:inherit 'zenburn-red-1))))
     '(wl-highlight-message-cited-text-1 ((t (:inherit 'zenburn-red))))
@@ -592,7 +668,7 @@
     '(wl-highlight-summary-answered-face ((t (:inherit 'zenburn-blue))))
     '(wl-highlight-summary-disposed-face ((t (:inherit 'zenburn-lowlight-2
 					       :slant italic))))
-    '(wl-highlight-summary-new-face ((t (:inherit 'zenburn-highlight-subtle))))
+    '(wl-highlight-summary-new-face ((t (:inherit 'zenburn-blue))))
     '(wl-highlight-summary-normal-face ((t (:inherit 'zenburn-fg))))
     '(wl-highlight-summary-thread-top-face ((t (:foreground "#efdcbc"))))
     '(wl-highlight-thread-indent-face ((t (:foreground "#ecbcec"))))
@@ -602,10 +678,8 @@
 
 (provide-theme 'zenburn)
 
-
 ;; Local Variables:
 ;; no-byte-compile: t
 ;; End:
-
 
 ;; zenburn-theme.el ends here
