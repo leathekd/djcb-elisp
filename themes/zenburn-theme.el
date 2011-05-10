@@ -127,7 +127,8 @@
     `(region ((t (:foreground nil :background ,zenburn-bg+2))))
     `(secondary-selection ((t (:foreground nil :background "#506070"))))
     '(trailing-whitespace ((t (:inherit font-lock-warning))))
-    '(highlight ((t (:underline nil))))
+    `(highlight ((t (:underline nil :weight bold :background ,zenburn-bg+2))))
+    
     '(paren ((t (:inherit 'zenburn-lowlight-1))))
     '(match ((t (:weight bold))))  
     `(button ((t (:foreground ,zenburn-yellow :background "#506070"
@@ -139,6 +140,8 @@
     '(mouse ((t (:inherit 'zenburn-foreground))))
     `(scroll-bar ((t (:background ,zenburn-bg+2))))
     `(tool-bar ((t (:background ,zenburn-bg+2))))
+
+ 
     
     ;; apt-utils
     '(apt-utils-normal-package ((t (:inherit 'zenburn-primary-1))))
@@ -261,6 +264,11 @@
     '(eshell-ls-special ((t (:inherit 'zenburn-primary-1))))
     `(eshell-ls-symlink ((t (:foreground ,zenburn-cyan :weight bold))))
 
+    ;; flymake
+    `(flymake-errline ((t (:underline ,zenburn-red-2))))
+    `(flymake-warnline ((t (:underline ,zenburn-blue))))
+
+    
     ;; flyspell
     '(flyspell-duplicate ((t (:inherit zenburn-primary-1))))
     '(flyspell-incorrect ((t (:inherit font-lock-warning))))
@@ -421,6 +429,21 @@
     '(jde-java-font-lock-number-face ((t (:inherit font-lock-constant))))
     '(jde-java-font-lock-operator-face ((t (:inherit font-lock-keyword))))
     '(jde-java-font-lock-link-face ((t (:inherit 'zenburn-primary-5 :underline t))))
+
+    ;; js2-mode (javascript)
+    `(js2-warning-face ((t (:underline ,zenburn-orange))))
+    `(js2-error-face ((t (:underline ,zenburn-red))))
+    `(js2-jsdoc-tag-face ((t (:foreground ,zenburn-blue-4))))
+    `(js2-jsdoc-type-face ((t (:foreground ,zenburn-blue+1))))
+    `(js2-jsdoc-value-face ((t (:foreground ,zenburn-yellow-2))))
+    `(js2-function-param-face ((t (:foreground ,zenburn-green+2))))
+    `(js2-instance-member-face ((t (:foreground ,zenburn-magenta))))
+    `(js2-private-member-face ((t (:foreground ,zenburn-yellow-2))))
+    `(js2-private-function-call-face ((t (:foreground ,zenburn-orange))))
+    `(js2-jsdoc-html-tag-name-face   ((t (:foreground ,zenburn-yellow))))
+    `(js2-jsdoc-html-tag-delimiter-face ((t (:foreground ,zenburn-green+4))))
+    `(js2-magic-paren-face ((t (:underline t))))
+    `(js2-external-variable-face ((t (:foreground ,zenburn-orange))))
     
     ;; keywiz
     '(keywiz-right-face ((t (:inherit 'zenburn-primary-1))))
@@ -563,7 +586,6 @@
     '(outline-3 ((t (:inherit outline-4 :height 1.0))))
     '(outline-2 ((t (:inherit outline-3 :height 1.0))))
     '(outline-1 ((t (:inherit outline-2  :height 1.0))))
-
     
     ;; rcirc
     '(rcirc-my-nick ((t (:inherit 'zenburn-primary-1))))
@@ -578,18 +600,21 @@
     '(rcirc-mode-line-nick ((t (:inherit 'zenburn-primary-1))))
 
     ;; rpm-spec
-    '(rpm-spec-dir ((t (:inherit zenburn-green))))
-    '(rpm-spec-doc ((t (:inherit zenburn-green))))
-    '(rpm-spec-ghost ((t (:inherit zenburn-red))))
-    '(rpm-spec-macro ((t (:inherit zenburn-yellow))))
-    '(rpm-spec-obsolete-tag ((t (:inherit zenburn-red))))
-    '(rpm-spec-package ((t (:inherit zenburn-red))))
-    '(rpm-spec-section ((t (:inherit zenburn-yellow))))
-    '(rpm-spec-tag ((t (:inherit zenburn-blue))))
-    '(rpm-spec-var ((t (:inherit zenburn-red))))
+    '(rpm-spec-dir ((t (:inherit 'zenburn-green))))
+    '(rpm-spec-doc ((t (:inherit 'zenburn-green))))
+    '(rpm-spec-ghost ((t (:inherit 'zenburn-red))))
+    '(rpm-spec-macro ((t (:inherit 'zenburn-yellow))))
+    '(rpm-spec-obsolete-tag ((t (:inherit 'zenburn-red))))
+    '(rpm-spec-package ((t (:inherit 'zenburn-red))))
+    '(rpm-spec-section ((t (:inherit 'zenburn-yellow))))
+    '(rpm-spec-tag ((t (:inherit 'zenburn-blue))))
+    '(rpm-spec-var ((t (:inherit 'zenburn-red))))
+
+    ;; sh-mode
+    '(sh-quoted-exec ((t (:inherit 'zenburn-blue))))
     
     ;; show-paren
-    '(show-paren-mismatch ((t (:inherit font-lock-warning))))
+    '(show-paren-mismatch ((t (:inherit 'font-lock-warning))))
     `(show-paren-match ((t (:foreground ,zenburn-blue-1 :underline nil))))
 
     ;; setnu
@@ -599,7 +624,7 @@
     '(speedbar-button-face ((t (:inherit 'zenburn-primary-1))))
     '(speedbar-file-face ((t (:inherit 'zenburn-primary-2))))
     '(speedbar-directory-face ((t (:inherit 'zenburn-primary-5))))
-    '(speedbar-tag-face ((t (:inherit font-lock-function-name))))
+    '(speedbar-tag-face ((t (:inherit 'font-lock-function-name))))
     '(speedbar-highlight-face ((t (:underline t))))
 
     ;; strokes
