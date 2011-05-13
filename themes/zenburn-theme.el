@@ -509,40 +509,9 @@
     '(nav-face-hdir ((t (:inherit zenburn-red))))
     '(nav-face-file ((t (:inherit zenburn-fg))))
     '(nav-face-hfile ((t (:inherit zenburn-red-4))))
+
     
-    
-    ;; nxml
-    '(nxml-attribute-colon ((t (:inherit default))))
-    '(nxml-attribute-local-name ((t (:inherit 'zenburn-primary-3))))
-    '(nxml-attribute-prefix ((t (:inherit default))))
-    '(nxml-attribute-value ((t (:inherit font-lock-string))))
-    '(nxml-attribute-value-delimiter ((t (:inherit nxml-attribute-value))))
-    '(nxml-cdata-section-CDATA ((t (:inherit 'zenburn-primary-4))))
-    '(nxml-cdata-section-content ((t (:inherit nxml-text))))
-    '(nxml-cdata-section-delimiter ((t (:inherit nxml-cdata-section-CDATA))))
-    '(nxml-char-ref-delimiter ((t (:inherit nxml-entity-ref-delimiter))))
-    '(nxml-char-ref-number ((t (:inherit nxml-entity-ref-name))))
-    '(nxml-comment-content ((t (:inherit font-lock-comment))))
-    '(nxml-comment-delimiter ((t (:inherit nxml-comment-content))))
-    '(nxml-delimited-data ((t (:inherit font-lock-string))))
-    '(nxml-delimiter ((t (:inherit default))))
-    '(nxml-element-colon ((t (:inherit default))))  
-    '(nxml-element-local-name ((t (:inherit 'zenburn-primary-1))))
-    '(nxml-element-prefix ((t (:inherit default))))
-    '(nxml-entity-ref-delimiter ((t (:inherit nxml-entity-ref-name))))
-    '(nxml-entity-ref-name ((t (:inherit 'zenburn-primary-5))))
-    '(nxml-name ((t (:inherit 'zenburn-primary-1))))
-    '(nxml-namespace-attribute-colon ((t (:inherit nxml-attribute-colon))))
-    '(nxml-namespace-attribute-prefix ((t (:inherit nxml-attribute-local-name))))
-    '(nxml-namespace-attribute-xmlns ((t (:inherit nxml-attribute-prefix))))
-    '(nxml-processing-instruction-content ((t (:inherit nxml-processing-instruction-target))))
-    '(nxml-processing-instruction-delimiter ((t (:inherit nxml-processing-instruction-target))))
-    '(nxml-processing-instruction-target ((t (:inherit 'zenburn-primary-2))))
-    '(nxml-ref ((t (:inherit 'zenburn-primary-5))))
-    '(nxml-tag-delimiter ((t (:inherit default))))
-    '(nxml-tag-slash ((t (:inherit default))))
-    '(nxml-text ((t (:inherit default)))) 
-    
+
     ;; org-mode
     '(org-agenda-date-today ((t (:foreground "white"
     				  :slant italic :weight bold))) t)       
