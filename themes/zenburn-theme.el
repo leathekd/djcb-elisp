@@ -65,7 +65,8 @@
    '(zenburn-primary-4 ((t (:foreground "#dca3a3" :weight bold))))
    '(zenburn-primary-5 ((t (:foreground "#94bff3" :weight bold))))
    '(zenburn-highlight-damp ((t (:foreground "#88b090" :background "#2e3330"))))
-   '(zenburn-highlight-alerting ((t (:foreground "#e37170" :background "#332323"))))
+   '(zenburn-highlight-alerting
+     ((t (:foreground "#e37170" :background "#332323"))))
    '(zenburn-highlight-subtle ((t (:background "#464646"))))
    '(zenburn-lowlight-1 ((t (:foreground "#606060"))))
    '(zenburn-lowlight-2 ((t (:foreground "#708070"))))
@@ -105,8 +106,9 @@
    '(hover-highlight ((t (:underline t :foreground "#f8f893"))))
    '(match ((t (:weight bold))))
    '(menu ((t nil)))
-   '(mode-line-inactive ((t (:background "#2e3330" :foreground "#88b090"
-                                         :box (:color "#2e3330" :line-width 2)))))
+   '(mode-line-inactive
+     ((t (:background "#2e3330" :foreground "#88b090"
+                      :box (:color "#2e3330" :line-width 2)))))
    '(mouse ((t (:inherit 'zenburn-foreground))))
    '(paren ((t (:inherit 'zenburn-lowlight-1))))
    '(trailing-whitespace ((t (:inherit font-lock-warning))))
@@ -275,7 +277,8 @@
    '(gnus-group-mail-5-empty-face ((t (:inherit gnus-group-news-5-empty))))
    '(gnus-group-mail-6-face ((t (:bold t :inherit gnus-group-mail-6-empty))))
    '(gnus-group-mail-6-empty-face ((t (:inherit gnus-group-news-6-empty))))
-   '(gnus-group-mail-low-face ((t (:bold t :inherit gnus-group-mail-low-empty))))
+   '(gnus-group-mail-low-face
+     ((t (:bold t :inherit gnus-group-mail-low-empty))))
    '(gnus-group-mail-low-empty-face ((t (:inherit gnus-group-news-low-empty))))
    '(gnus-group-news-1-face ((t (:bold t :inherit gnus-group-news-1-empty))))
    '(gnus-group-news-2-face ((t (:bold t :inherit gnus-group-news-2-empty))))
@@ -283,7 +286,8 @@
    '(gnus-group-news-4-face ((t (:bold t :inherit gnus-group-news-4-empty))))
    '(gnus-group-news-5-face ((t (:bold t :inherit gnus-group-news-5-empty))))
    '(gnus-group-news-6-face ((t (:bold t :inherit gnus-group-news-6-empty))))
-   '(gnus-group-news-low-face ((t (:bold t :inherit gnus-group-news-low-empty))))
+   '(gnus-group-news-low-face
+     ((t (:bold t :inherit gnus-group-news-low-empty))))
    '(gnus-header-content-face ((t (:inherit message-header-other))))
    '(gnus-header-from-face ((t (:inherit message-header-from))))
    '(gnus-header-name-face ((t (:inherit message-header-name))))
@@ -293,15 +297,21 @@
    '(gnus-summary-high-ancient-face ((t (:inherit 'zenburn-blue))))
    '(gnus-summary-high-read-face ((t (:inherit 'zenburn-green :weight bold))))
    '(gnus-summary-high-ticked-face ((t (:inherit 'zenburn-primary-2))))
-   '(gnus-summary-high-unread-face ((t (:inherit 'zenburn-foreground :weight bold))))
-   '(gnus-summary-low-ancient-face ((t (:inherit 'zenburn-blue :weight normal))))
+   '(gnus-summary-high-unread-face
+     ((t (:inherit 'zenburn-foreground :weight bold))))
+   '(gnus-summary-low-ancient-face
+     ((t (:inherit 'zenburn-blue :weight normal))))
    '(gnus-summary-low-read-face ((t (:inherit 'zenburn-green :weight normal))))
    '(gnus-summary-low-ticked-face ((t (:inherit 'zenburn-primary-2))))
-   '(gnus-summary-low-unread-face ((t (:inherit 'zenburn-foreground :weight normal))))
-   '(gnus-summary-normal-ancient-face ((t (:inherit 'zenburn-blue :weight normal))))
-   '(gnus-summary-normal-read-face ((t (:inherit 'zenburn-green :weight normal))))
+   '(gnus-summary-low-unread-face
+     ((t (:inherit 'zenburn-foreground :weight normal))))
+   '(gnus-summary-normal-ancient-face
+     ((t (:inherit 'zenburn-blue :weight normal))))
+   '(gnus-summary-normal-read-face
+     ((t (:inherit 'zenburn-green :weight normal))))
    '(gnus-summary-normal-ticked-face ((t (:inherit 'zenburn-primary-2))))
-   '(gnus-summary-normal-unread-face ((t (:inherit 'zenburn-foreground :weight normal))))
+   '(gnus-summary-normal-unread-face
+     ((t (:inherit 'zenburn-foreground :weight normal))))
    '(gnus-summary-selected-face ((t (:inherit 'zenburn-primary-1))))
    `(gnus-cite-1-face ((t (:foreground ,zenburn-blue))))
    `(gnus-cite-10-face ((t (:foreground ,zenburn-yellow-1))))
@@ -368,7 +378,8 @@
    ;; isearch
    `(isearch ((t (:foreground ,zenburn-yellow :background ,zenburn-bg-1))))
    `(isearch-fail ((t (:foreground ,zenburn-fg :background ,zenburn-red-4))))
-   `(lazy-highlight ((t (:foreground ,zenburn-yellow :background ,zenburn-bg+2))))
+   `(lazy-highlight
+     ((t (:foreground ,zenburn-yellow :background ,zenburn-bg+2))))
 
    ;; jabber-mode
    '(jabber-roster-user-chatty ((t (:inherit 'zenburn-primary-1))))
@@ -392,7 +403,8 @@
    '(jde-java-font-lock-package-face ((t (:inherit 'zenburn-primary-3))))
    '(jde-java-font-lock-number-face ((t (:inherit font-lock-constant))))
    '(jde-java-font-lock-operator-face ((t (:inherit font-lock-keyword))))
-   '(jde-java-font-lock-link-face ((t (:inherit 'zenburn-primary-5 :underline t))))
+   '(jde-java-font-lock-link-face
+     ((t (:inherit 'zenburn-primary-5 :underline t))))
 
    ;; keywiz
    '(keywiz-right-face ((t (:inherit 'zenburn-primary-1))))
@@ -417,7 +429,8 @@
    '(message-separator-face ((t (:inherit font-lock-comment))))
 
    ;; minimap
-   '(minimap-active-region-background ((t (:foreground nil :background "#233323"))))
+   '(minimap-active-region-background
+     ((t (:foreground nil :background "#233323"))))
 
    ;; org-mode
    '(org-agenda-date-today-face
@@ -425,8 +438,9 @@
    '(org-agenda-structure-face
      ((t (:inherit font-lock-comment-face))))
    `(org-archived-face ((t (:foreground ,zenburn-fg :weight bold))))
-   `(org-checkbox-face ((t (:background ,zenburn-bg+2 :foreground "white"
-                                        :box (:line-width 1 :style released-button)))))
+   `(org-checkbox-face
+     ((t (:background ,zenburn-bg+2 :foreground "white"
+                      :box (:line-width 1 :style released-button)))))
    `(org-date-face ((t (:foreground ,zenburn-blue :underline t))))
    `(org-deadline-announce-face ((t (:foreground ,zenburn-red-1))))
    `(org-done-face ((t (:bold t :weight bold :foreground ,zenburn-green+3))))
@@ -503,7 +517,8 @@
    ;; tuareg
    '(tuareg-font-lock-governing-face ((t (:inherit 'zenburn-primary-2))))
    '(tuareg-font-lock-interactive-error-face ((t (:inherit font-lock-warning))))
-   '(tuareg-font-lock-interactive-output-face ((t (:inherit 'zenburn-primary-3))))
+   '(tuareg-font-lock-interactive-output-face
+     ((t (:inherit 'zenburn-primary-3))))
    '(tuareg-font-lock-operator-face ((t (:inherit font-lock-operator))))
 
    ;; twittering-mode
@@ -514,10 +529,13 @@
    '(w3m-form-button-face ((t (:inherit widget-button))))
    '(w3m-form-button-pressed-face ((t (:inherit widget-button-pressed))))
    '(w3m-form-button-mouse-face ((t (:inherit widget-button-pressed))))
-   '(w3m-tab-unselected-face ((t (:box (:line-width 1 :style released-button)))))
+   '(w3m-tab-unselected-face
+     ((t (:box (:line-width 1 :style released-button)))))
    '(w3m-tab-selected-face ((t (:box (:line-width 1 :style pressed-button)))))
-   '(w3m-tab-unselected-retrieving-face ((t (:inherit w3m-tab-unselected widget-inactive))))
-   '(w3m-tab-selected-retrieving-face ((t (:inherit w3m-tab-selected widget-inactive))))
+   '(w3m-tab-unselected-retrieving-face
+     ((t (:inherit w3m-tab-unselected widget-inactive))))
+   '(w3m-tab-selected-retrieving-face
+     ((t (:inherit w3m-tab-selected widget-inactive))))
    '(w3m-tab-background-face ((t (:inherit 'zenburn-highlight-subtle))))
    '(w3m-anchor-face ((t (:inherit 'zenburn-primary-1))))
    '(w3m-arrived-anchor-face ((t (:inherit 'zenburn-primary-2))))
@@ -542,11 +560,14 @@
    '(wl-highlight-message-cited-text-4 ((t (:inherit 'zenburn-blue+))))
    '(wl-highlight-message-header-contents-face ((t (:inherit 'zenburn-green))))
    '(wl-highlight-message-headers-face ((t (:inherit 'zenburn-red+1))))
-   '(wl-highlight-message-important-header-contents ((t (:inherit 'zenburn-green+2))))
+   '(wl-highlight-message-important-header-contents
+     ((t (:inherit 'zenburn-green+2))))
    '(wl-highlight-message-header-contents ((t (:inherit 'zenburn-green+1))))
-   '(wl-highlight-message-important-header-contents2 ((t (:inherit 'zenburn-green+2))))
+   '(wl-highlight-message-important-header-contents2
+     ((t (:inherit 'zenburn-green+2))))
    '(wl-highlight-message-signature ((t (:inherit 'zenburn-green))))
-   '(wl-highlight-message-unimportant-header-contents ((t (:inherit 'zenburn-lowlight-2))))
+   '(wl-highlight-message-unimportant-header-contents
+     ((t (:inherit 'zenburn-lowlight-2))))
    '(wl-highlight-summary-answered-face ((t (:inherit 'zenburn-blue))))
    '(wl-highlight-summary-disposed-face ((t (:inherit 'zenburn-lowlight-2
                                                       :slant italic))))
