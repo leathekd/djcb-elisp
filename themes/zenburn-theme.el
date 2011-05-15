@@ -101,7 +101,7 @@
    '(fringe ((t (:inherit 'default))))
    '(header-line ((t (:inherit 'zenburn-highlight-damp
                                :box (:color "#2e3330" :line-width 2)))))
-   '(highlight ((t (:weight bold :underline t))))
+   '(highlight ((t (:weight bold :underline nil))))
    '(hover-highlight ((t (:underline t :foreground "#f8f893"))))
    '(match ((t (:weight bold))))
    '(menu ((t nil)))
@@ -478,7 +478,8 @@
 
    ;; show-paren
    '(show-paren-mismatch ((t (:inherit font-lock-warning))))
-   `(show-paren-match ((t (:foreground ,zenburn-blue-1 :underline nil))))
+   `(show-paren-match
+     ((t (:inherit nil :background ,zenburn-bg-1 :underline nil))))
 
    ;; setnu
    '(setnu-line-number ((t (:inherit 'zenburn-lowlight-2))))
