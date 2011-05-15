@@ -227,7 +227,7 @@
     
     ;; eshell
     '(eshell-prompt ((t (:inherit 'zenburn-primary-1))))
-    '(eshell-ls-archive ((t (:foreground "#c3bf9f" :weight bold))))
+    `(eshell-ls-archive ((t (:foreground ,zenburn-red-1 :weight bold))))
     '(eshell-ls-backup ((t (:inherit font-lock-comment))))
     '(eshell-ls-clutter ((t (:inherit font-lock-comment))))
     `(eshell-ls-directory ((t (:foreground ,zenburn-blue+1 :weight bold))))
@@ -245,9 +245,9 @@
     '(font-latex-title-4 ((t (:inherit 'zenburn-title))))
     
     ;; font-locking
-    '(font-lock-builtin-face ((t (:inherit 'zenburn-blue)))) 
-    '(font-lock-comment-face  ((t (:inherit italic :foreground "#999999"))))
-    '(font-lock-comment-delimiter-face ((t (:foreground "#777777"))))
+    '(font-lock-builtin-face ((t (:inherit 'zenburn-blue))))
+    `(font-lock-comment-face ((t (:foreground ,zenburn-green))))
+    `(font-lock-comment-delimiter-face ((t (:foreground ,zenburn-green))))
     '(font-lock-constant-face ((t (:inherit 'zenburn-primary-4))))
     '(font-lock-doc-face ((t (:inherit 'zenburn-green+1))))
     `(font-lock-doc-string-face ((t (:foreground ,zenburn-blue+1))))
@@ -330,8 +330,8 @@
     ;; highlight
     '(highlight-current-line ((t (:inherit 'zenburn-highlight-subtle))))
 
-    ;; 
-    '(hl-line ((t (:background "#444444"))))
+    ;; hightlight the current line
+    `(hl-line ((t (:background ,zenburn-bg-1))))
     
     ;; holiday
     '(holiday ((t (:underline t :inherit 'zenburn-primary-4))))
@@ -343,10 +343,10 @@
     '(ibuffer-help-buffer ((t (:inherit font-lock-comment))))
 
     ;; icomplete
-    '(icompletep-choices ((t (:foreground "#dcdccc")))) ; zenburn-fg
-    '(icompletep-determined ((t (:foreground "#8FB28F")))) ; zenburn-green+1
-    '(icompletep-nb-candidates ((t (:foreground "#AFD8AF")))) ; zenburn-green+3
-    '(icompletep-keys ((t (:foreground "#CC9393")))) ; zenburn-red
+    `(icompletep-choices ((t (:foreground ,zenburn-fg)))) 
+    `(icompletep-determined ((t (:foreground ,zenburn-green+1)))) 
+    `(icompletep-nb-candidates ((t (:foreground ,zenburn-green+3)))) 
+    `(icompletep-keys ((t (:foreground ,zenburn-red))))
     
     ;; ido
     '(ido-first-match ((t (:inherit 'zenburn-primary-1))))
