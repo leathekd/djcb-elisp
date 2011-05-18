@@ -98,7 +98,6 @@
    '(italic ((t (:slant italic))))
    '(underline ((t (:underline t))))
 
-
    '(fringe ((t (:inherit 'default))))
    '(header-line ((t (:inherit 'zenburn-highlight-damp
                                :box (:color "#2e3330" :line-width 2)))))
@@ -376,7 +375,7 @@
    '(info-header-node ((t (:weight normal))))
 
    ;; isearch
-   `(isearch ((t (:foreground ,zenburn-yellow :background ,zenburn-bg-1))))
+   `(isearch ((t (:foreground ,zenburn-yellow :background ,zenburn-bg+1))))
    `(isearch-fail ((t (:foreground ,zenburn-fg :background ,zenburn-red-4))))
    `(lazy-highlight
      ((t (:foreground ,zenburn-yellow :background ,zenburn-bg+2))))
