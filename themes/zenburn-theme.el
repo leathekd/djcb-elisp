@@ -492,8 +492,8 @@
     '(rcirc-mode-line-nick ((t (:inherit 'zenburn-primary-1))))
     
     ;; show-paren
-    '(show-paren-mismatch ((t (:inherit font-lock-warning))))
-    `(show-paren-match ((t (:foreground ,zenburn-blue-1 :underline nil))))
+    '(show-paren-mismatch ((t (:inherit font-lock-warning :weight bold))))
+    `(show-paren-match ((t (:background ,zenburn-blue-5 :underline t))))
 
     ;; setnu
     '(setnu-line-number ((t (:inherit 'zenburn-lowlight-2))))
