@@ -238,6 +238,10 @@
     '(eshell-ls-special ((t (:inherit 'zenburn-primary-1))))
     `(eshell-ls-symlink ((t (:foreground ,zenburn-cyan :weight bold))))
 
+    ;; flyspell
+    `(flyspell-duplicate ((t (:foreground ,zenburn-yellow, :weight bold))))
+    `(flyspell-incorrect ((t (:foreground ,zenburn-red :weight bold))))
+    
     ;; font-latex
     '(font-latex-bold ((t (:inherit bold))))
     '(font-latex-warning ((t (:inherit font-lock-warning))))
