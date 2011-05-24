@@ -492,7 +492,7 @@
     '(rcirc-mode-line-nick ((t (:inherit 'zenburn-primary-1))))
     
     ;; show-paren
-    '(show-paren-mismatch ((t (:inherit font-lock-warning))))
+    '(show-paren-mismatch ((t (:inherit font-lock-warning :weight bold))))
     `(show-paren-match ((t (:inherit nil :background ,zenburn-bg-1 :underline nil))))
 
     ;; setnu
