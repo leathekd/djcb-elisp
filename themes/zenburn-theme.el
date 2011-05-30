@@ -330,7 +330,14 @@
 
     ;; help-argument
     '(help-argument-name ((t (:weight bold))))
-    
+					 
+    ;; hi-lock-mode
+    `(hi-yellow  ((t (:foreground ,zenburn-yellow))))
+    `(hi-pink  ((t (:foreground ,zenburn-red-4))))
+    `(hi-green  ((t (:foreground ,zenburn-green-1))))
+    `(hi-blue  ((t (:foreground ,zenburn-blue-5))))
+  
+
     ;; highlight
     '(highlight-current-line ((t (:inherit 'zenburn-highlight-subtle))))
 
