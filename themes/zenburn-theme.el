@@ -250,7 +250,7 @@
     
     ;; font-locking
     '(font-lock-builtin-face ((t (:inherit 'zenburn-blue))))
-    `(font-lock-comment-face ((t (:foreground ,zenburn-green))))
+    `(font-lock-comment-face ((t (:foreground ,zenburn-green :slant italic))))
     `(font-lock-comment-delimiter-face ((t (:foreground ,zenburn-green))))
     '(font-lock-constant-face ((t (:inherit 'zenburn-primary-4))))
     '(font-lock-doc-face ((t (:inherit 'zenburn-green+1))))
@@ -410,6 +410,11 @@
     '(keywiz-wrong-face ((t (:inherit font-lock-warning))))
     '(keywiz-command-face ((t (:inherit 'zenburn-primary-2))))
 
+    ;; magit
+    '(magit-section-title ((t (:inherit 'zenburn-red))))
+    '(magit-item-highlight ((t (:inherit 'zenburn-blue))))
+    '(magit-branch ((t (:inherit 'zenburn-blue))))
+    
     ;; makefile
     '(makefile-space ((t (:inherit font-lock-warning))))
     '(makefile-shell ((t (nil))))
