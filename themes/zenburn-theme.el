@@ -36,6 +36,8 @@
        (zenburn-yellow		"#f0dfaf")
        (zenburn-yellow-1	"#e0cf9f")
        (zenburn-yellow-2	"#d0bf8f")
+
+       (zenburn-green-4         "#2e3330")
        (zenburn-green-1		"#5f7f5f")
        (zenburn-green		"#7f9f7f")
        (zenburn-green+1		"#8fb28f")
@@ -105,7 +107,7 @@
     '(hover-highlight ((t (:underline t :foreground "#f8f893"))))
     '(match ((t (:weight bold))))  
     '(menu ((t nil)))
-    '(mode-line-inactive ((t (:background "#2e3330" :foreground "#88b090"
+    `(mode-line-inactive ((t (:background ,zenburn-green-4 :foreground "#88b090"
 			       :box (:color "#2e3330" :line-width 2)))))
     '(mouse ((t (:inherit 'zenburn-foreground))))
     '(paren ((t (:inherit 'zenburn-lowlight-1))))
@@ -438,8 +440,15 @@
     '(minimap-active-region-background ((t (:foreground nil :background "#233323"))))
     
     ;; org-mode
-    '(org-agenda-date-today
-       ((t (:foreground "white" :slant italic :weight bold))) t)
+    `(org-agenda-clocking
+       ((t (:background ,zenburn-green-4 :weight bold))) t)
+    `(org-agenda-date-today
+       ((t (:foreground ,zenburn-cyan :slant italic :weight bold))) t)
+    `(org-agenda-date
+       ((t (:foreground ,zenburn-blue))) t)
+    `(org-agenda-date-weekend
+       ((t (:foreground ,zenburn-blue+1))) t)
+    
     '(org-agenda-structure
        ((t (:inherit font-lock-comment))))
     `(org-archived ((t (:foreground ,zenburn-fg :weight bold))))
